@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Android Spirit Rover Controller</string>
+    <string name="ipaddr">IPAddr</string>
+    <string name="connect">Connect</string>
+    <string name="port">Port</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="ip_address_of_server">IP Address of Server</string>
+    <string name="port_number_of_server">Port Number of Server</string>
+    <string name="ip_address">IP Address</string>
+    <string name="kill_srvr">Kill Srvr</string>
 </resources>
