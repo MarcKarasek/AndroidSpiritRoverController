@@ -24,7 +24,9 @@ public class netparams {
     private static final int NET_INIT_PARAMS = 0x1E;
     private static final int NET_CLIENT_DC = 0x1F;
     private static final int NET_VIDEO_ON = 0x20;
-    private static final int NET_VIDEO_OFF= 0x21;
+    private static final int NET_VIDEO_OFF = 0x21;
+    private static final int NET_BUZZER_ON = 0x22;
+    private static final int NET_BUZZER_OFF = 0x23;
 
 
     byte netopcode;
@@ -156,6 +158,20 @@ public class netparams {
 
     void disconnet() {
         netopcode = NET_CLIENT_DC;
+        rsvd0 = 0;
+        rsvd1 = 0;
+        rsvd2 = 0;
+    }
+
+    void buzzer_on() {
+        netopcode = NET_BUZZER_ON;
+        rsvd0 = 0;
+        rsvd1 = 0;
+        rsvd2 = 0;
+    }
+
+    void buzzer_off() {
+        netopcode = NET_BUZZER_OFF;
         rsvd0 = 0;
         rsvd1 = 0;
         rsvd2 = 0;

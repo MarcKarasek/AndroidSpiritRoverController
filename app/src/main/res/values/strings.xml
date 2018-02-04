@@ -3,9 +3,20 @@
     <string name="ipaddr">IPAddr</string>
     <string name="connect">Connect</string>
     <string name="port">Port</string>
-    <string name="disconnect">Disconnect</string>
     <string name="ip_address_of_server">IP Address of Server</string>
     <string name="port_number_of_server">Port Number of Server</string>
-    <string name="ip_address">IP Address</string>
-    <string name="kill_srvr">Kill Srvr</string>
+    <string name="buzzer">Buzzer</string>
+    <string name="leds">Leds</string>
+    <string name="togglebuzzer">ToggleBuzzer</string>
+    <string name="b">B</string>
+    <string name="toggleledleft">ToggleLedLeft</string>
+    <string name="toggleledright">ToggleLedRight</string>
+    <string name="picture">Picture</string>
+    <string name="head">Head</string>
+    <string name="rover">Rover</string>
+    <string name="p">P</string>
+    <string name="l">L</string>
+    <string name="r">R</string>
+    <string name="togglevideo">ToggleVideo</string>
+    <string name="v">V</string>
 </resources>

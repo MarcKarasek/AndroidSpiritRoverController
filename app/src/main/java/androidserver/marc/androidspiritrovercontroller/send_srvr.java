@@ -258,25 +258,4 @@ public class send_srvr {
         client_socket.send(send_packet);
     }
 
-    void srvr_kill(String ipaddr, int port) throws IOException
-    {
-        byte[] initparams = srvr_kill();
-
-        DatagramSocket client_socket = new DatagramSocket();
-        InetAddress IPAddress = InetAddress.getByName(ipaddr);
-        DatagramPacket send_packet = new DatagramPacket(initparams, initparams.length, IPAddress, port);
-        client_socket.send(send_packet);
-    }
-
-    void tcpstop(String ipaddr, int port) throws IOException
-    {
-        byte[] initparams = srvr_tcpstop();
-
-        DatagramSocket client_socket = new DatagramSocket();
-        InetAddress IPAddress = InetAddress.getByName(ipaddr);
-        DatagramPacket send_packet = new DatagramPacket(initparams, initparams.length, IPAddress, port);
-        client_socket.send(send_packet);
-    }
-
-
 }

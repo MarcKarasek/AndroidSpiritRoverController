@@ -23,7 +23,7 @@ public class SrvrLogin extends AppCompatActivity {
     /* Called when the user taps the Connect button */
     public void server_connect(View view) throws IOException {
         send_srvr srvr_snd = new send_srvr();
-        Intent intent = new Intent(this, DemoCode.class);
+        Intent intent = new Intent(this, RoverControls.class);
         EditText IpAddr = (EditText) findViewById(R.id.editIpAddr);
         String ipaddr = IpAddr.getText().toString();
         EditText Port = (EditText) findViewById(R.id.editPort);

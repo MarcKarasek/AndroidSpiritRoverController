@@ -6,4 +6,180 @@
     android:layout_height="match_parent"
     tools:context="androidserver.marc.androidspiritrovercontroller.RoverControls">
 
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="333dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="236dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/head"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/joystick2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="@string/rover"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/joystick1" />
+
+        <io.github.controlwear.virtual.joystick.android.JoystickView
+            android:id="@+id/joystick2"
+            android:layout_width="145dp"
+            android:layout_height="142dp"
+            android:layout_alignStart="@+id/joystick1"
+            android:layout_below="@+id/joystick1"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="8dp"
+            app:JV_backgroundColor="#009688"
+            app:JV_borderColor="#00796B"
+            app:JV_borderWidth="4dp"
+            app:JV_buttonColor="#FF6E40"
+            app:JV_buttonSizeRatio="15%"
+            app:JV_fixedCenter="false"
+            app:layout_constraintBottom_toTopOf="@+id/joystick1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.882" />
+
+        <io.github.controlwear.virtual.joystick.android.JoystickView
+            android:id="@+id/joystick1"
+            android:layout_width="163dp"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="104dp"
+            app:JV_backgroundColor="#009688"
+            app:JV_borderColor="#00796B"
+            app:JV_borderWidth="4dp"
+            app:JV_buttonColor="#FF6E40"
+            app:JV_buttonSizeRatio="15%"
+            app:JV_fixedCenter="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="375dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/take_picture"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="@string/p"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/leds"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/buzzer"
+            app:layout_constraintStart_toEndOf="@+id/toggleBuzzer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/picture"
+            app:layout_constraintStart_toEndOf="@+id/toggleVideo"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ToggleButton
+            android:id="@+id/toggleLedRight"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_toggle"
+            android:checked="false"
+            android:text="@string/toggleledright"
+            android:textOff="@string/r"
+            android:textOn="@string/r"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleLedLeft"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <ToggleButton
+            android:id="@+id/toggleLedLeft"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_toggle"
+            android:checked="false"
+            android:text="@string/toggleledleft"
+            android:textOff="@string/l"
+            android:textOn="@string/l"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <ToggleButton
+            android:id="@+id/toggleVideo"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/button_toggle"
+            android:text="@string/togglevideo"
+            android:textOff="@string/v"
+            android:textOn="@string/v"
+            app:layout_constraintBottom_toTopOf="@+id/take_picture"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/toggleBuzzer"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_toggle"
+            android:checked="false"
+            android:text="@string/togglebuzzer"
+            android:textOff="@string/b"
+            android:textOn="@string/b"
+            app:layout_constraintBottom_toTopOf="@+id/toggleVideo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
 </android.support.constraint.ConstraintLayout>
